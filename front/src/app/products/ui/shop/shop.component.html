@@ -1,0 +1,19 @@
+<div class="product-container" >
+  @for (product of paginatedProducts(); track product) {
+    <div class="product-card">
+      <div class="product-title">{{ product.name }}</div>
+      <div class="product-category">Catégorie: {{ product.category }}</div>
+      <div class="product-price">Prix: {{ product.price }}€</div>
+      <div class="product-description">{{ product.description }}</div>
+      <button  (click)="addToCart(product)">Ajouter au panier</button>
+    </div>
+  }
+</div>
+
+<!-- Pagination Controls -->
+<div class="pagination">
+  <button (click)="previousPage()" [disabled]="currentPage() === 1"><< Précédent</button>
+  <span>Page {{ currentPage() }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage() >= Math.ceil(products().length / pageSize())">Suivant >></button>
+</div>
+

@@ -1,0 +1,87 @@
+.cart-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+.empty-cart {
+  text-align: center;
+  color: gray;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-details {
+  flex-grow: 1;
+}
+
+.cart-details h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 12px;
+  color: gray;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn-quantity {
+  background: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn-remove {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-remove:hover {
+  background: darkred;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cart-total {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-container {
+  padding: 10px; /* Adds space inside the container */
+  border: 1px solid #ddd; /* Optional: adds a visible border */
+}
